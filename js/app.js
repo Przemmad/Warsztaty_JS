@@ -23,8 +23,14 @@ function showHide(){
        this.innerHTML = 'WIĘCEJ <span class="glyphicon glyphicon-chevron-down"></span>';
      }
    }
-   
+
   for (var i = 0; i < buttons.length; i++) {
        buttons[i].addEventListener('click', showHide);
    }
+var menuBox = document.querySelector('.navbar');
+
+   window.addEventListener('scroll', function() {
+     menuBox.style.borderBottom = '1px solid #7f7f7f';
+   });
+
 });
